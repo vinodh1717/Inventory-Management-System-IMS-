@@ -29,6 +29,29 @@ A simple inventory management system built using Flask and SQLite. Users can reg
 
 1. **Clone the repo**  
    ```bash
-   git clone https://github.com/your-username/inventory-management-system.git
-   cd inventory-management-system
+   git clone https://github.com/vinodh1717/Inventory-Management-System-IMS-.git
+   cd Inventory-Management-System-IMS-
+Create a virtual environment (optional but recommended)
 
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+Install the required dependencies
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Run the app
+
+bash
+Copy
+Edit
+python app.py
+Open in browser
+Visit http://localhost:5000 to access the app.
+
+🙌 Author
+Made with ❤️ by vinodh1717
