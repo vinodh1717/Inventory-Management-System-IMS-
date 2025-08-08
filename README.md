@@ -1,56 +1,84 @@
-# 🗃️ Inventory Management System (IMS)
+# 📦 Inventory Management System (IMS)
 
-A simple inventory management system built using Flask and SQLite. Users can register, log in, and manage their inventory. Items with quantity ≤ 5 trigger a low-stock alert on the dashboard.
+The **Inventory Management System (IMS)** is a user-friendly web platform designed to help businesses efficiently track, manage, and update stock information in real time. It ensures seamless monitoring of product availability, categories, suppliers, and sales.
 
 ## 🚀 Features
 
-- User authentication (Register/Login)
-- Add, edit, and delete inventory items
-- Track item quantity, category, price & description
-- Low-stock alert for items with quantity ≤ 10
-- Highlights low-stock items in the table
-- Flash messages for actions (add, update, delete)
+- 📋 Add, update, and delete product records  
+- 🧾 View inventory stock status at a glance  
+- 📊 Dashboard with product statistics and summaries  
+- 🗂️ Categorized product listings  
+- 🔒 Secure user login and session handling  
+- 💡 Alerts for low stock  
 
-## 💻 Tech Stack
+## 🛠️ Tech Stack
 
-- Python
-- Flask
-- SQLite (can be changed to MySQL)
-- Flask-Login
-- SQLAlchemy
-- HTML + Bootstrap
+- **Frontend**: HTML, CSS, Bootstrap, JavaScript  
+- **Backend**: Python (Flask / Django)  
+- **Database**: SQLite / MySQL  
+- **Tools**: Git, VS Code  
 
-## 📷 Screenshot
+## 📁 Folder Structure
 
-> Add a screenshot of your app's dashboard here if you have one
+```
+ims/
+│
+├── static/               # CSS, JS, and image files
+├── templates/            # HTML templates
+├── app.py                # Flask/Django main application file
+├── models.py             # Database models
+├── routes.py             # Route and logic handling
+├── config.py             # Configuration file
+├── requirements.txt
+└── README.md
+```
 
-## ⚙️ How to Run
+## 🧪 Installation
 
-1. **Clone the repo**  
-   ```bash
-   git clone https://github.com/vinodh1717/Inventory-Management-System-IMS-.git
-   cd Inventory-Management-System-IMS-
-Create a virtual environment (optional but recommended)
+```bash
+# Clone the repository
+git clone https://github.com/vinodh1717/inventory-management-system.git
+cd inventory-management-system
 
-bash
-Copy
-Edit
+# Create virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install the required dependencies
 
-bash
-Copy
-Edit
+# Install dependencies
 pip install -r requirements.txt
-Run the app
+```
 
-bash
-Copy
-Edit
+## ▶️ Run the App
+
+```bash
 python app.py
-Open in browser
-Visit http://localhost:5000 to access the app.
+```
 
-thankyou
+## 🔐 Admin Credentials
 
+```
+Username: admin
+Password: admin123
+```
+
+*(Change these credentials after first login for security.)*
+
+## 📷 Sample Screenshot
+
+*(Add a dashboard or product page screenshot here)*
+
+## 📌 To-Do
+
+- [ ] Add role-based access control (admin, staff, etc.)  
+- [ ] Integrate email/SMS stock alerts  
+- [ ] Add export to Excel/PDF  
+- [ ] Responsive design improvements  
+
+## 👨‍💻 Author
+
+**Vinod N**  
+[GitHub](https://github.com/vinodh1717) | [LinkedIn](https://www.linkedin.com/in/n-vinod-8456b9295)
+
+## 📄 License
+
+MIT License – free to use, modify, and distribute.
