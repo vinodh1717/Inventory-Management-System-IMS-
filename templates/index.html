@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Inventory</h2>
+
+<!-- Low Stock Alert Box -->
+{% if low_stock_items %}
+<div class="alert alert-warning">
+    <strong>⚠️ Low Stock Alert!</strong>
+    <ul class="mb-0">
+        {% for item in low_stock_items %}
+            <li><strong>{{ item.name }}</strong> — Only {{ item.quantity }} left</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+
+<!-- Inventory Table -->
+<table class="table table-bordered table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price (₹)</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in items %}
+        <tr {% if item.quantity <= 5 %} class="table-warning" {% endif %}>
+            <td>{{ item.name }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.price }}</td>
+            <td>{{ item.category }}</td>
+            <td>{{ item.description }}</td>
+            <td>
+                <a href="{{ url_for('edit_item', item_id=item.id) }}" class="btn btn-sm btn-primary">Edit</a>
+                <a href="{{ url_for('delete_item', item_id=item.id) }}" class="btn btn-sm btn-danger" onclick="return confirm('Delete this item?')">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
