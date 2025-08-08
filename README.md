@@ -7,10 +7,9 @@ A simple inventory management system built using Flask and SQLite. Users can reg
 - User authentication (Register/Login)
 - Add, edit, and delete inventory items
 - Track item quantity, category, price & description
-- Low-stock alert for items with quantity ≤ 5
+- Low-stock alert for items with quantity ≤ 10
 - Highlights low-stock items in the table
 - Flash messages for actions (add, update, delete)
-- Clean UI with Bootstrap
 
 ## 💻 Tech Stack
 
