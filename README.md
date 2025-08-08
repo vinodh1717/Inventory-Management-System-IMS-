@@ -53,5 +53,5 @@ python app.py
 Open in browser
 Visit http://localhost:5000 to access the app.
 
-🙌 Author
-Made with ❤️ by vinodh1717
+thankyou
+
