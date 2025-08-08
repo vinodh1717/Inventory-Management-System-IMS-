@@ -74,11 +74,4 @@ Password: admin123
 - [ ] Add export to Excel/PDF  
 - [ ] Responsive design improvements  
 
-## 👨‍💻 Author
 
-**Vinod N**  
-[GitHub](https://github.com/vinodh1717) | [LinkedIn](https://www.linkedin.com/in/n-vinod-8456b9295)
-
-## 📄 License
-
-MIT License – free to use, modify, and distribute.
